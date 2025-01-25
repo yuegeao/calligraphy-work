@@ -1,2 +1,116 @@
-# calligraphyWork
-A calligraphy practice template primarily composed of grid-based "Tian Zi Ge" (Chinese character practice grids)
+# Calligraphy Practice Template
+
+## Overview
+
+This project provides a customizable **calligraphy practice template**, primarily designed for Chinese character writing exercises. The template features grid-based **Tian Zi Ge** (田字格) layout, allowing users to configure various parameters such as grid size, color, spacing, and blank areas. Additionally, it supports different layout modes and optional tracing to assist in writing practice.
+
+---
+
+## Features
+
+- **Customizable Grid Layout**
+  - Define the number of rows and columns.
+  - Adjust grid size and color.
+  - Control blank rows and columns for spacing flexibility.
+
+- **Multiple Layout Modes**
+  - `Normal` – Standard grid with blank spaces.
+  - `AllH` – Entire row blank.
+  - `AllV` – Entire column blank.
+  - `Full` – No blank spaces, filling the entire page.
+
+- **Tian Zi Ge Guidelines**
+  - Dashed diagonal and center lines for character positioning.
+
+- **Tracing Support**
+  - Option to enable gray-colored tracing text for guided practice.
+
+- **Flexible Page Margins**
+  - Adjustable positioning to fit different paper sizes (e.g., A4, Letter).
+
+---
+
+## Usage
+
+### Syntax
+
+Define a calligraphy practice sheet with customizable options:
+
+```clojure
+#calligraphyWork(
+  font: "FZYingBiKaiShu-S15S", // Default font
+  size: 4em,                   // Character size
+  cols: 12,                     // Number of columns
+  rows: 18,                     // Number of rows
+  color: red,                    // Grid color
+  blank-row: 2,                   // Blank rows at bottom
+  blank-col: 2,                   // Blank columns on the right
+  type: "Normal",                  // Grid type
+  showTianZi: true,                  // Show Tian Zi guidelines
+  miao: false,                         // Enable tracing text
+  body                                  // Text content
+)
+```
+
+### Example Usage
+
+```clojure
+#calligraphyWork(miao: true, size: 4em)[
+  　　四十年来家国三千\
+  里地山河凤阁龙楼连霄\
+  汉玉树琼枝作烟萝几曾\
+  识干戈
+
+  　　一旦归为臣虏沈腰\
+  潘鬓消磨最是仓皇辞庙\
+  日教坊犹奏别离歌垂泪\
+  对宫娥
+]
+```
+
+This example will generate a calligraphy practice page with tracing enabled.
+
+---
+
+## Configuration Options
+
+| Parameter   | Description                                   | Default Value      |
+|-------------|-----------------------------------------------|-------------------|
+| `cols`       | Number of columns in the grid                 | `12`               |
+| `rows`       | Number of rows in the grid                    | `18`               |
+| `size`       | Font size of characters                       | `4em`              |
+| `color`      | Color of grid lines                           | `red`              |
+| `blank-row`  | Number of blank rows at the bottom            | `2`                |
+| `blank-col`  | Number of blank columns on the right          | `2`                |
+| `type`       | Grid type (`Normal`, `AllH`, `AllV`, `Full`)   | `"Normal"`         |
+| `showTianZi` | Show or hide Tian Zi Ge guidelines            | `true`             |
+| `miao`       | Enable gray tracing text for practice         | `false`            |
+
+---
+
+## Layout Modes
+
+1. **Normal (default):**  
+   - Regular grid with blank spaces.
+  
+2. **AllH:**  
+   - Entire rows left blank for custom writing.
+
+3. **AllV:**  
+   - Entire columns left blank for flexible layout.
+
+4. **Full:**  
+   - No blank spaces; fills the entire page.
+
+---
+
+## Installation and Setup
+
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---

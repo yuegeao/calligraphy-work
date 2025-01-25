@@ -1,0 +1,16 @@
+[package]
+name = "calligraphyWork"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["yuegeao"]
+license = "MIT"
+description = "一个用于书法练习的田字格模板。A calligraphy practice template"
+repository = "https://github.com/yuegeao/calligraphyWork"
+keywords = ["template", "calligraphy","Chinese"]
+categories = ["fun"]
+compiler = "0.12.0"
+
+[template]
+path = "template"
+entrypoint = "template.typ"
+thumbnail = "thumbnail.png"
