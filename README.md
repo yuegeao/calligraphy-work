@@ -1,10 +1,10 @@
-# Calligraphy Practice Template
+# calligraphyWork
+
+![Example use of the template](./thumbnail.png)
 
 ## Overview
 
 This project provides a customizable **calligraphy practice template**, primarily designed for Chinese character writing exercises. The template features grid-based **Tian Zi Ge** (田字格) layout, allowing users to configure various parameters such as grid size, color, spacing, and blank areas. Additionally, it supports different layout modes and optional tracing to assist in writing practice.
-
----
 
 ## Features
 
@@ -28,34 +28,19 @@ This project provides a customizable **calligraphy practice template**, primaril
 - **Flexible Page Margins**
   - Adjustable positioning to fit different paper sizes (e.g., A4, Letter).
 
----
-
 ## Usage
 
-### Syntax
+Click "Start from template" in the Typst web app and search for problemst.
 
-Define a calligraphy practice sheet with customizable options:
-
-```clojure
-#calligraphyWork(
-  font: "FZYingBiKaiShu-S15S", // Default font
-  size: 4em,                   // Character size
-  cols: 12,                     // Number of columns
-  rows: 18,                     // Number of rows
-  color: red,                    // Grid color
-  blank-row: 2,                   // Blank rows at bottom
-  blank-col: 2,                   // Blank columns on the right
-  type: "Normal",                  // Grid type
-  showTianZi: true,                  // Show Tian Zi guidelines
-  miao: false,                         // Enable tracing text
-  body                                  // Text content
-)
+Alternatively, run the following command to create a directory initialized with all necessary files:
+```
+typst init @preview/calligraphyWork:0.1.0
 ```
 
 ### Example Usage
 
-```clojure
-#calligraphyWork(miao: true, size: 4em)[
+```typst
+#calligraphyWork(miao: true)[
   　　四十年来家国三千\
   里地山河凤阁龙楼连霄\
   汉玉树琼枝作烟萝几曾\
@@ -68,11 +53,7 @@ Define a calligraphy practice sheet with customizable options:
 ]
 ```
 
-This example will generate a calligraphy practice page with tracing enabled.
-
----
-
-## Configuration Options
+## Configuration
 
 | Parameter   | Description                                   | Default Value      |
 |-------------|-----------------------------------------------|-------------------|
@@ -85,8 +66,6 @@ This example will generate a calligraphy practice page with tracing enabled.
 | `type`       | Grid type (`Normal`, `AllH`, `AllV`, `Full`)   | `"Normal"`         |
 | `showTianZi` | Show or hide Tian Zi Ge guidelines            | `true`             |
 | `miao`       | Enable gray tracing text for practice         | `false`            |
-
----
 
 ## Layout Modes
 
@@ -102,15 +81,7 @@ This example will generate a calligraphy practice page with tracing enabled.
 4. **Full:**  
    - No blank spaces; fills the entire page.
 
----
-
-## Installation and Setup
-
-
----
 
 ## License
 
 This project is licensed under the MIT License.
-
----
