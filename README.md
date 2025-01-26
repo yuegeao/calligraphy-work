@@ -21,7 +21,7 @@ This project provides a customizable **calligraphy practice template**, primaril
 
 ## Usage
 
-Click "Start from template" in the Typst web app and search for problemst.
+Click "Start from template" in the Typst web app and search for calligraphyWork.
 
 Alternatively, run the following command to create a directory initialized with all necessary files:
 ```
