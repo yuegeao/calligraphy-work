@@ -13,20 +13,11 @@ This project provides a customizable **calligraphy practice template**, primaril
   - Adjust grid size and color.
   - Control blank rows and columns for spacing flexibility.
 
-- **Multiple Layout Modes**
-  - `Normal` – Standard grid with blank spaces.
-  - `AllH` – Entire row blank.
-  - `AllV` – Entire column blank.
-  - `Full` – No blank spaces, filling the entire page.
-
 - **Tian Zi Ge Guidelines**
   - Dashed diagonal and center lines for character positioning.
 
 - **Tracing Support**
   - Option to enable gray-colored tracing text for guided practice.
-
-- **Flexible Page Margins**
-  - Adjustable positioning to fit different paper sizes (e.g., A4, Letter).
 
 ## Usage
 

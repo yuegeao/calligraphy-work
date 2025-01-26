@@ -1,4 +1,4 @@
-#let calligraphyPaper(
+#let calligraphy-paper(
   cols: 12,   // 田字格列数
   rows: 18,   // 田字格行数
   color: red, // 田字格线条颜色
@@ -63,7 +63,7 @@
   ]
 }
 
-#let calligraphyWork(
+#let calligraphy-work(
   font: "FZYingBiKaiShu-S15S", // 默认字体（方正硬笔楷书）
   size: 4em,    // 字体大小
   cols: 12,     // 列数
@@ -83,7 +83,7 @@
 
   set page(
     margin: (x: x, y: y,),  // 页边距设置
-    background: calligraphyPaper(
+    background: calligraphy-paper(
       spacing: spacing,
       cols: cols,
       rows: rows,
@@ -109,7 +109,7 @@
   ]
 }
 
-#calligraphyWork(miao: true, size: 4em)[
+#calligraphy-work(miao: true, size: 4em)[
   　　四十年来家国三千\
   里地山河凤阁龙楼连霄\
   汉玉树琼枝作烟萝几曾\
@@ -121,13 +121,13 @@
   对宫娥
 ]
 
-#calligraphyWork(type: "AllH", miao: true, size: 4em)[
+#calligraphy-work(type: "AllH", miao: true, size: 4em)[
   　　四十年来家国，三千里地山河。凤阁龙楼连霄汉，玉树琼枝作烟萝，几曾识干戈？
 
   　　一旦归为臣虏，沈腰潘鬓消磨。最是仓皇辞庙日，教坊犹奏别离歌，垂泪对宫娥。
 ]
 
-#calligraphyWork(miao: true, type: "Full", size: 4em)[
+#calligraphy-work(miao: true, type: "Full", size: 4em)[
   　　四十年来家国三千里地山河凤阁龙楼连霄汉玉树琼枝作烟萝几曾识干戈
 
   　　一旦归为臣虏沈腰潘鬓消磨最是仓皇辞庙日教坊犹奏别离歌垂泪对宫娥
