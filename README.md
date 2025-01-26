@@ -1,7 +1,8 @@
 # calligraphyWork
 
-![Example use of the template](./thumbnail.png)
-
+![Example use of the template1](./thumbnail.png)
+![Example use of the template2](./imgs/template-2.png)
+![Example use of the template3](./imgs/template-3.png)
 ## Overview
 
 This project provides a customizable **calligraphy practice template**, primarily designed for Chinese character writing exercises. The template features grid-based **Tian Zi Ge** (田字格) layout, allowing users to configure various parameters such as grid size, color, spacing, and blank areas. Additionally, it supports different layout modes and optional tracing to assist in writing practice.
